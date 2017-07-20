@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:weightSum="1"
+    tools:context=".AddToDoFragment">
+
+    <EditText
+        android:id="@+id/toDo"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight=".1"
+        android:layout_marginBottom="8dp"
+        android:hint="Enter To Do" />
+
+    // spinner
+    <Spinner
+        android:id="@+id/category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/colorAccent"/>
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight=".8"
+        android:hapticFeedbackEnabled="false"
+        android:headerBackground="@android:color/holo_purple"
+        android:scaleY="0.95" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginTop="4dp"
+        android:layout_weight=".1"
+        android:backgroundTint="@android:color/holo_purple"
+        android:text="Add"
+        android:textColor="@color/colorWhite" />
+
+</LinearLayout>

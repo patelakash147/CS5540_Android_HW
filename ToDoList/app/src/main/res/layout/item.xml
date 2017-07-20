@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="186dp"
+        android:layout_height="38dp"
+        android:text="To do description"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toRightOf="@+id/status"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/dueDate"
+        android:layout_width="109dp"
+        android:layout_height="26dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="0dp"
+        android:text="06-04-2017"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@+id/status"
+        app:layout_constraintTop_toBottomOf="@+id/description" />
+
+    <!--Add TextView for category-->
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="85dp"
+        android:layout_height="26dp"
+        android:layout_marginLeft="57dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="0dp"
+        android:text="category"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@+id/dueDate"
+        app:layout_constraintTop_toBottomOf="@+id/description" />
+
+    <!--Add Checkbox for status-->
+    <CheckBox
+        android:id="@+id/status"
+        android:layout_width="38dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="35dp"
+        android:textColorLink="@android:color/holo_purple"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="37dp" />
+
+</android.support.constraint.ConstraintLayout>

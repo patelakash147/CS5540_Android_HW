@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ToDoList</string>
+  // items for category
+    <string-array name="categories_array">
+        <item>Study</item>
+        <item>Business</item>
+        <item>Personal</item>
+        <item>Friends</item>
+    </string-array>
+
+   // title for menu
+    <string name="category_menu">Category</string>
+    <string name="category_0">All</string>
+    <string name="category_1">Study</string>
+    <string name="category_2">Business</string>
+    <string name="category_3">Personal</string>
+    <string name="category_4">Friends</string>
+</resources>

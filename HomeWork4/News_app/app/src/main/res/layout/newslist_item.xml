@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="horizontal"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="0.67"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/news_title"
+            android:layout_width="223dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="test" />
+
+        <TextView
+            android:id="@+id/news_description"
+            android:layout_width="223dp"
+            android:layout_height="wrap_content"
+            android:text="test"
+            android:textSize="14sp"
+            tools:textColor="@android:color/holo_red_dark" />
+
+        <TextView
+            android:id="@+id/news_time"
+            android:layout_width="221dp"
+            android:layout_height="wrap_content"
+            android:text="test"
+            android:textColorLink="@android:color/holo_red_dark"
+            android:textSize="18sp"
+            android:visibility="visible"
+            tools:background="@android:color/background_light"
+            tools:textColor="@android:color/holo_red_dark" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="0.31">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="231dp"
+            android:layout_height="135dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.05"
+            android:src="@color/colorAccent" />
+    </FrameLayout>
+
+</LinearLayout>
